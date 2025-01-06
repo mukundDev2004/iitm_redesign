@@ -85,7 +85,7 @@ $(function() {
             
         BasicSlider.slick({
             autoplay: true,
-            autoplaySpeed: 10000,
+            autoplaySpeed: 5000,
             pauseOnHover: false,
             dots: false,
             fade: true,

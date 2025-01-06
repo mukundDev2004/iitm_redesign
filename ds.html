@@ -12,8 +12,175 @@
     <title>Edubin - LMS Education HTML Template</title>
     
     <!--====== Favicon Icon ======-->
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://study.iitm.ac.in/ds/assets/img/logo.ico">
+    <link rel="icon" href="https://study.iitm.ac.in/ds/assets/img/logo.ico">
+    <link rel="author" href="https://study.iitm.ac.in/ds/humans.txt">
+    <style>
+        
+        
+        /* Caption text */
+        .text {
+          color: #f2f2f2;
+          font-size: 15px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+        }
 
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+          .text {font-size: 11px}
+        }
+
+        .fontag2 {
+          font-family: 'Open Sans', sans-serif;
+          font-size: 3rem;         
+          font-weight: 800;
+          line-height: 2.9375rem;
+          text-align: center;
+        }
+
+        .fontag3 {
+                font-size: 1.1666666667rem;
+                font-family:'Open Sans', sans-serif;
+                font-weight: 600;
+                line-height: 1.3333333333rem;
+                letter-spacing: .0233333333rem;
+                color: black;
+        }
+
+        .fonts
+        {
+            font-size: 3vw;
+        } 
+               
+        .dot1 {
+                      height: 15px;
+                      width: 15px;
+                      margin: 0 2px;
+                      background-color: #bbb;
+                      border-radius: 50%;
+                      display: inline-block;
+                      transition: background-color 0.6s ease;
+        }
+        
+        .active {
+          background-color: #717171;
+        }
+        
+        
+      @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+      }
+
+
+
+        /* Corosal container */ 
+    
+      .mySlides {
+            display: inline;
+            height:100%;
+        }
+
+
+        .slide-track1 {
+            margin-top: 20px;
+            width: 100%;
+            display: flex;
+            gap: 2em;
+            float:right;
+        }
+
+        @keyframes scroll {
+            0% {transform: translateX(0);}
+            100% {transform: translatex(-1000%)}
+        }
+
+         /* The dots/bullets/indicators */
+         .dot {
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+
+        .responsive {
+            width: 100%;
+            height: auto;
+        }
+
+       .slideshow-container1 {
+            position: relative;
+            margin: auto;
+        }
+
+       /* Next & previous buttons */
+        .prev, .next {
+                  cursor: pointer;
+                  position: absolute;
+                  top: 50%;
+                  width: auto;
+                  padding-right: 16px;
+                  margin-top: -22px;
+                  color: white;
+                  font-weight: bold;
+                  font-size: 18px;
+                  transition: 0.6s ease;
+                  border-radius: 0 3px 3px 0;
+                  user-select: none;
+         }
+
+         .next {
+                  right: 0;
+                  border-radius: 3px 0 0 3px;
+        }     
+
+        .active, .dot:hover {
+                  background-color: #717171;
+        }
+
+        .fade1 {
+                  animation-name: fade;
+                  animation-duration: 1.5s;
+        }
+
+        @keyframes fade1 {
+                  from {opacity: .4} 
+                  to {opacity: 1}
+         }
+
+        @media only screen and (max-width: 300px) {
+                  .prev, .next,.text {font-size: 11px}
+        }
+        /* .slide_1{
+            width: 200px;
+        } */
+        /*sponcer logo slider*/
+        .slider_1:before{left:0;top:0}
+        .slider_1:after{right:0;top:0;transform:rotateZ(180deg)}
+        .slider_1:after,.slider_1:before{background:linear-gradient(to right);content:"";height:75pt;position:absolute;width:200px;z-index:2}
+        .slider_1 .slide_1-track-1{animation:scroll-l 45s linear infinite;display:flex;width:2000px}
+        .slider_1 .slide_1-track-2{animation:scroll-r 45s linear infinite;display:flex;width:2000px}
+        .slider_1 .slide_1 img{width:100px;padding:1pc;vertical-align:middle;margin:0 auto;display:inline-block;height:auto}
+
+        @keyframes scroll-l{0%{transform:translateX(0)}100%{transform:translateX(calc(-250px * 7))}}
+        @keyframes scroll-r{100%{transform:translateX(0)}0%{transform:translateX(calc(-250px * 7))}}
+
+        @media(min-width:1450px){.slider_1 .slide_1 img{width:110px;}.slider_1{height:75pt;margin:0 auto;overflow:hidden;position:relative;cursor:default;user-select:none;touch-action:none}}
+        @media(max-width:520px){.slider_1 .slide_1 img{width:80px;}.slider_1{height:45pt;margin:0 auto;overflow:hidden;position:relative;cursor:default;user-select:none;touch-action:none}}
+        @media(max-width:420px){.slider_1 .slide_1 img{width:70px;}.slider_1{height:45pt;margin:0 auto;overflow:hidden;position:relative;cursor:default;user-select:none;touch-action:none}}
+        @media(min-width:1200px){.slider_1 .slide_1 img{width:90px;}.slider_1{height:75pt;margin:0 auto;overflow:hidden;position:relative;cursor:default;user-select:none;touch-action:none}}
+        @media(min-width:1920px){.slider_1 .slide_1 img{width:120px;}.slider_1{height:75pt;margin:0 auto;overflow:hidden;position:relative;cursor:default;user-select:none;touch-action:none}}
+  
+          
+
+        </style>
     <!--====== Slick css ======-->
     <link rel="stylesheet" href="assets/css/slick.css">
 
@@ -50,23 +217,7 @@
 
 <body>
    
-    <!--====== PRELOADER PART START ======-->
-    
-    <div class="preloader">
-        <div class="loader rubix-cube">
-            <div class="layer layer-1"></div>
-            <div class="layer layer-2"></div>
-            <div class="layer layer-3 color-1"></div>
-            <div class="layer layer-4"></div>
-            <div class="layer layer-5"></div>
-            <div class="layer layer-6"></div>
-            <div class="layer layer-7"></div>
-            <div class="layer layer-8"></div>
-        </div>
-    </div>
-    
-    <!--====== PRELOADER PART START ======-->
-    
+   
     <!--====== HEADER PART START ======-->
     
     <header id="header-part">
@@ -79,7 +230,7 @@
                     <div class="col-lg-4 col-md-4">
                         <div class="logo">
                             <a href="index-2.html">
-                                <img src="assets/images/logo.png" alt="Logo">
+                                <img src="assets/img/logo.png" alt="Logo">
                             </a>
                         </div>
                     </div>
@@ -87,11 +238,11 @@
                         <div class="support-button float-right d-none d-md-block">
                             <div class="support float-left">
                                 <div class="icon">
-                                    <img src="assets/images/all-icon/support.png" alt="icon">
+                                    <img src="assets/img/all-icon/support.png" alt="icon">
                                 </div>
                                 <div class="cont">
-                                    <p>Need Help? call us free</p>
-                                    <span>321 325 5678</span>
+                                    <p>Need Help? call us</p>
+                                    <span>987 654 3210</span>
                                 </div>
                             </div>
                             <div class="button float-left">
@@ -290,7 +441,106 @@
             </form>
         </div> <!-- serach form -->
     </div>
+        <!--====== SLIDER PART START ======-->
     
+        <section id="slider-part" class="slider-active">
+            <div class="single-slider bg_cover pt-150" style="background-image: url(assets/img/slider/Director-01.jpg)" data-overlay="4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-7 col-lg-9">
+                            <!-- <div class="slider-cont">
+                                <ul>
+                                    <li><a data-animation="fadeInUp" data-delay="1.6s" class="main-btn" href="#">Read More</a></li>
+                                    <li><a data-animation="fadeInUp" data-delay="1.9s" class="main-btn main-btn-2" href="#">Get Started</a></li>
+                                </ul>
+                            </div> -->
+                        </div>
+                    </div> <!-- row -->
+                </div> <!-- container -->
+            </div> <!-- single slider -->
+            
+            <div class="single-slider bg_cover pt-150" style="background-image: url(assets/img/slider/BSToppers-02.jpg)" data-overlay="4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-7 col-lg-9">
+                            <!-- <div class="slider-cont">
+                                <ul>
+                                    <li><a data-animation="fadeInUp" data-delay="1.6s" class="main-btn" href="#">Read More</a></li>
+                                    <li><a data-animation="fadeInUp" data-delay="1.9s" class="main-btn main-btn-2" href="#">Get Started</a></li>
+                                </ul>
+                            </div> -->
+                        </div>
+                    </div> <!-- row -->
+                </div> <!-- container -->
+            </div> <!-- single slider -->
+            
+            <div class="single-slider bg_cover pt-150" style="background-image: url(assets/img/slider/Distribution-02.jpg)" data-overlay="4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-7 col-lg-9">
+                            <!-- <div class="slider-cont">
+                                <ul>
+                                    <li><a data-animation="fadeInUp" data-delay="1.6s" class="main-btn" href="#">Read More</a></li>
+                                    <li><a data-animation="fadeInUp" data-delay="1.9s" class="main-btn main-btn-2" href="#">Get Started</a></li>
+                                </ul>
+                            </div> -->
+                        </div>
+                    </div> <!-- row -->
+                </div> <!-- container -->
+            </div> <!-- single slider -->
+        </section>
+        
+        <!--====== SLIDER PART ENDS ======-->
+       
+        <!--====== CATEGORY PART START ======-->
+        
+        <section id="category-part" class="py-5">
+            <div class="container">
+                <div class="row text-white">
+                    <!-- Section Title -->
+        
+                    <!-- Cards Section -->
+                    <div class="col-lg-10" style="
+                    margin: 0px 7%;
+                ">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <h1 class="font-weight-bold" style="color: #D6A64F;">20,000+</h1>
+                                        <p style="color: #D6A64F; font-weight: 600;">Students doing this program along with another degree</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <h1 class="font-weight-bold" style="color: #D6A64F;">3000+</h1>
+                                        <p style="color: #D6A64F; font-weight: 600;">Working Professionals studying in the program</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <h1 class="font-weight-bold" style="color: #D6A64F;">850+</h1>
+                                        <p style="color: #D6A64F; font-weight: 600;">Secured Admission to Masters/PhD programs within and outside India</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <h1 class="font-weight-bold" style="color: #D6A64F;">20+</h1>
+                                        <p style="color: #D6A64F; font-weight: 600;">BS students in Top 100 Ranks of GATE Exam 2024</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     <!--====== SEARCH BOX PART ENDS ======-->
     <section id="video-feature" class="bg_cover pt-60 pb-110"">
         <div class="container">
@@ -353,100 +603,173 @@
             </div>
         </div>
     </section>
+        <!--====== APPLY PART START ======-->
     
-    <!--====== SLIDER PART START ======-->
-    
-    <section id="slider-part" class="slider-active">
-        <div class="single-slider bg_cover pt-150" style="background-image: url(assets/images/slider/Director-01.jpg)" data-overlay="4">
+        <!-- <section id="apply-aprt">
             <div class="container">
-                <div class="row">
-                    <div class="col-xl-7 col-lg-9">
-                        <!-- <div class="slider-cont">
-                            <ul>
-                                <li><a data-animation="fadeInUp" data-delay="1.6s" class="main-btn" href="#">Read More</a></li>
-                                <li><a data-animation="fadeInUp" data-delay="1.9s" class="main-btn main-btn-2" href="#">Get Started</a></li>
-                            </ul>
-                        </div> -->
+                <div class="apply">
+                    <div class="row no-gutters">
+                        <div class="col-lg-6">
+                            <div class="apply-cont apply-color-1">
+                                <h3>Applications Open for January 2025 Batch</h3>
+                                <p>Applications are now open for the January 2025 batch. Don’t miss your opportunity to join the next cohort of learners. Apply before the deadline to secure your spot.</p>
+                                <a href="#" class="main-btn">Apply Now</a>
+                            </div> 
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="apply-cont apply-color-2">
+                                <h3>Scholarship Applications Open</h3>
+                                <p>Eligible learners from low-income backgrounds can apply for our scholarship program and get up to 75% fee waivers. Over 2000 students have benefited from this program and are studying for free.</p>
+                                <a href="#" class="main-btn">Apply Now</a>
+                            </div>
+                        </div> 
                     </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-        </div> <!-- single slider -->
+                </div>
+            </div>
+        </section> -->
+        <section id="apply-section">
+            <div class="container">
+                <div class="apply">
+                    <div class="row no-gutters">
+                        <!-- Left Section: Applications Open -->
+                        <div class="col-lg-6">
+                            <div class="apply-cont apply-color-1">
+                                <h3>Applications Open for January 2025 Batch</h3>
+                                <p>Applications are now open for the January 2025 batch. Don’t miss your opportunity to join the next cohort of learners. Apply before the deadline to secure your spot.</p>
+                                <p><strong>Applications Close:</strong> January 02, 2025</p>
+                                <p><strong>Entrance Exam:</strong> February 23, 2025</p>
+                                <a href="#" class="main-btn">Apply Now</a>
+                            </div> <!-- apply cont -->
+                        </div>
         
-        <div class="single-slider bg_cover pt-150" style="background-image: url(assets/images/slider/BSToppers-02.jpg)" data-overlay="4">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-7 col-lg-9">
-                        <!-- <div class="slider-cont">
-                            <ul>
-                                <li><a data-animation="fadeInUp" data-delay="1.6s" class="main-btn" href="#">Read More</a></li>
-                                <li><a data-animation="fadeInUp" data-delay="1.9s" class="main-btn main-btn-2" href="#">Get Started</a></li>
-                            </ul>
-                        </div> -->
+                        <!-- Right Section: Scholarship Information -->
+                        <div class="col-lg-6">
+                            <div class="apply-cont apply-color-2">
+                                <h3>Scholarship Applications Open</h3>
+                                <p>Eligible learners from low-income backgrounds can apply for our scholarship program and get up to 75% fee waivers. Over 2000 students have benefited from this program and are studying for free.</p>
+                                <p><strong>Deadline:</strong> January 02, 2025</p>
+                                <a href="#" class="main-btn">Apply for Scholarship</a>
+                            </div> <!-- apply cont -->
+                        </div> 
                     </div>
                 </div> <!-- row -->
             </div> <!-- container -->
-        </div> <!-- single slider -->
+        </section>
         
-        <div class="single-slider bg_cover pt-150" style="background-image: url(assets/images/slider/Distribution-02.jpg)" data-overlay="4">
+        <!--====== APPLY PART ENDS ======-->
+       
+    <section class="container">
+        
+        
+        <br>
+        <br>
+        <section id="program-courses">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-7 col-lg-9">
-                        <!-- <div class="slider-cont">
-                            <ul>
-                                <li><a data-animation="fadeInUp" data-delay="1.6s" class="main-btn" href="#">Read More</a></li>
-                                <li><a data-animation="fadeInUp" data-delay="1.9s" class="main-btn main-btn-2" href="#">Get Started</a></li>
-                            </ul>
-                        </div> -->
+                    <!-- Card 1: Data Science Courses -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card h-100 text-center border-0 shadow">
+                            <div class="card-body">
+                                <img src="./assets/img/homepage/Group_48099322_7_b4ea241570.png" class="mb-3" style="width: 80px;" alt="Data Science Courses">
+                                <h5 class="card-title font-weight-bold">Data Science Courses</h5>
+                                <p class="card-text">ML Foundations, Deep Learning, Reinforcement Learning, Computer Vision, LLMs, Big Data</p>
+                            </div>
+                        </div>
                     </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-        </div> <!-- single slider -->
-    </section>
+        
+                    <!-- Card 2: Programming Courses -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card h-100 text-center border-0 shadow">
+                            <div class="card-body">
+                                <img src="./assets/img/homepage/Group_480993225_0ff191809a.png" class="mb-3" style="width: 80px;" alt="Programming Courses">
+                                <h5 class="card-title font-weight-bold">Programming Courses</h5>
+                                <p class="card-text">Python, Java, PostgreSQL, Linux commands, C programming, Full Stack Application Development</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Card 3: Frameworks and Libraries -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card h-100 text-center border-0 shadow">
+                            <div class="card-body">
+                                <img src="./assets/img/homepage/Group_4809932223_9dc8a46ff8.png" class="mb-3" style="width: 80px;" alt="Frameworks and Libraries">
+                                <h5 class="card-title font-weight-bold">Frameworks and Libraries</h5>
+                                <p class="card-text">Flask, Vue, NumPy, Scikit-learn, PyTorch, OpenCV, Kafka and many more relevant for Data Science applications</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Card 4: Business Courses -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card h-100 text-center border-0 shadow">
+                            <div class="card-body">
+                                <img src="./assets/img/homepage/Group_480993225_bc30ee109b.png" class="mb-3" style="width: 80px;" alt="Business Courses">
+                                <h5 class="card-title font-weight-bold">Business Courses</h5>
+                                <p class="card-text">Business Data Management, Business Analytics, Tools in Data Science, Financial Forensics, Market Research, Managerial Economics</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
     
-    <!--====== SLIDER PART ENDS ======-->
+    
+
+    
    
-    <!--====== CATEGORY PART START ======-->
-    
-    <section id="category-part" class="py-5">
+
+  
+    <!--====== NEWS PART START ======-->
+    <section id="news-part">
         <div class="container">
-            <div class="row text-white">
-                <!-- Section Title -->
+            <div class="row">
+                <!-- Left Section: Single Large Div -->
+                <div class="col-lg-6">
+                    <div id="left-feature" class="singel-news mt-30 big-feature">
+                        <div class="news-thum pb-25" style="text-align: center;">
+                            <img src="assets/img/homepage/CupIcon-01.png" alt="Best Online Program">
+                        </div>
+                        <div class="news-cont">
+                            <a href="#"><h3>Best Online Program</h3></a>
+                            <p>Awarded by <span class="text-secondary">QS Reimagine Education & The Wharton School, University of Pennsylvania</span></p>
+                        </div>
+                    </div>
+                </div>
     
-                <!-- Cards Section -->
-                <div class="col-lg-10" style="
-                margin: 0px 7%;
-            ">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="card text-center">
-                                <div class="card-body">
-                                    <h1 class="font-weight-bold" style="color: #D6A64F;">20,000+</h1>
-                                    <p style="color: #D6A64F; font-weight: 600;">Students doing this program along with another degree</p>
-                                </div>
+                <!-- Right Section: Three Smaller Features -->
+                <div class="col-lg-6">
+                    <div id="right-features" class="carousel-container">
+                        <!-- Feature 1 -->
+                        <div class="singel-news mt-30 feature-slide">
+                            <div class="news-thum pb-25 col-md-3" style="text-align: center;">
+                                <img src="assets/img/homepage/Group_48099322_3_8285f11c85.png" alt="Scholarship" style="width: 80px;">
+                            </div>
+                            <div class="news-cont col-md-9">
+                                <a href="#"><h3>Scholarship</h3></a>
+                                <p>Learners from &lt; 5LPA eligible for up to 75% fee waivers. 2000+ students study for free</p>
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <div class="card text-center">
-                                <div class="card-body">
-                                    <h1 class="font-weight-bold" style="color: #D6A64F;">3000+</h1>
-                                    <p style="color: #D6A64F; font-weight: 600;">Working Professionals studying in the program</p>
-                                </div>
+    
+                        <!-- Feature 2 -->
+                        <div class="singel-news mt-30 feature-slide">
+                            <div class="news-thum pb-25 col-md-3" style="text-align: center;">
+                                <img src="assets/img/homepage/Group_48099322_4_38c933a489.png" alt="No Age Limit" style="width: 80px;">
+                            </div>
+                            <div class="news-cont col-md-9">
+                                <a href="#"><h3>No Age Limit</h3></a>
+                                <p>Learners from any age and anywhere in the world can study in this program. Current age of learners: 17 to 81 years.</p>
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <div class="card text-center">
-                                <div class="card-body">
-                                    <h1 class="font-weight-bold" style="color: #D6A64F;">850+</h1>
-                                    <p style="color: #D6A64F; font-weight: 600;">Secured Admission to Masters/PhD programs within and outside India</p>
-                                </div>
+    
+                        <!-- Feature 3 -->
+                        <div class="singel-news mt-30 feature-slide">
+                            <div class="news-thum pb-25 col-md-3" style="text-align: center;">
+                                <img src="assets/img/homepage/Group_48099322_5_83d4ff011f.png" alt="Mode of Study" style="width: 80px;">
                             </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card text-center">
-                                <div class="card-body">
-                                    <h1 class="font-weight-bold" style="color: #D6A64F;">20+</h1>
-                                    <p style="color: #D6A64F; font-weight: 600;">BS students in Top 100 Ranks of GATE Exam 2024</p>
-                                </div>
+                            <div class="news-cont col-md-9">
+                                <a href="#"><h3>Mode of Study</h3></a>
+                                <p>Pre-recorded and synchronous sessions, Weekly Online Assignments, In-person quizzes</p>
                             </div>
                         </div>
                     </div>
@@ -456,684 +779,70 @@
     </section>
     
     
-    <!--====== CATEGORY PART ENDS ======-->
-   
-    <!--====== ABOUT PART START ======-->
-    
-    <section id="about-part" class="pt-65">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5">
-                    <div class="section-title mt-50">
-                        <h5>About us</h5>
-                        <h2>Welcome to Edubin </h2>
-                    </div> <!-- section title -->
-                    <div class="about-cont">
-                        <p>Lorem ipsum gravida nibh vel velit auctor aliquetn sollicitudirem quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet . Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt  mauris. <br> <br> auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet . Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt  mauris</p>
-                        <a href="#" class="main-btn mt-55">Learn More</a>
-                    </div>
-                </div> <!-- about cont -->
-                <div class="col-lg-6 offset-lg-1">
-                    <div class="about-event mt-50">
-                        <div class="event-title">
-                            <h3>Upcoming events</h3>
-                        </div> <!-- event title -->
-                        <ul>
-                            <li>
-                                <div class="singel-event">
-                                    <span><i class="fa fa-calendar"></i> 2 December 2018</span>
-                                    <a href="events-singel.html"><h4>Campus clean workshop</h4></a>
-                                    <span><i class="fa fa-clock-o"></i> 10:00 Am - 3:00 Pm</span>
-                                    <span><i class="fa fa-map-marker"></i> Rc Auditorim</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="singel-event">
-                                    <span><i class="fa fa-calendar"></i> 2 December 2018</span>
-                                    <a href="events-singel.html"><h4>Tech Summit</h4></a>
-                                    <span><i class="fa fa-clock-o"></i> 10:00 Am - 3:00 Pm</span>
-                                    <span><i class="fa fa-map-marker"></i> Rc Auditorim</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="singel-event">
-                                    <span><i class="fa fa-calendar"></i> 2 December 2018</span>
-                                    <a href="events-singel.html"><h4>Enviroement conference</h4></a>
-                                    <span><i class="fa fa-clock-o"></i> 10:00 Am - 3:00 Pm</span>
-                                    <span><i class="fa fa-map-marker"></i> Rc Auditorim</span>
-                                </div>
-                            </li>
-                        </ul> 
-                    </div> <!-- about event -->
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-        <div class="about-bg">
-            <img src="assets/images/about/bg-1.png" alt="About">
-        </div>
-    </section>
-    
-    <!--====== ABOUT PART ENDS ======-->
-   
-    <!--====== APPLY PART START ======-->
-    
-    <section id="apply-aprt" class="pb-120">
-        <div class="container">
-            <div class="apply">
-                <div class="row no-gutters">
-                    <div class="col-lg-6">
-                        <div class="apply-cont apply-color-1">
-                            <h3>Apply for fall 2019</h3>
-                            <p>Gravida nibh vel velit auctor aliquetn sollicitudirem sem quibibendum auci elit cons equat ipsutis sem nibh id elituis sed odio sit amet nibh vulputate cursus equat ipsutis.</p>
-                            <a href="#" class="main-btn">Apply Now</a>
-                        </div> <!-- apply cont -->
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="apply-cont apply-color-2">
-                            <h3>Apply for scholarship</h3>
-                            <p>Gravida nibh vel velit auctor aliquetn sollicitudirem sem quibibendum auci elit cons equat ipsutis sem nibh id elituis sed odio sit amet nibh vulputate cursus equat ipsutis.</p>
-                            <a href="#" class="main-btn">Apply Now</a>
-                        </div> <!-- apply cont -->
-                    </div> 
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
-    
-    <!--====== APPLY PART ENDS ======-->
-   
-    <!--====== COURSE PART START ======-->
-    
-    <section id="course-part" class="pt-115 pb-120 gray-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="section-title pb-45">
-                        <h5>Our course</h5>
-                        <h2>Featured courses </h2>
-                    </div> <!-- section title -->
-                </div>
-            </div> <!-- row -->
-            <div class="row course-slied mt-30">
-                <div class="col-lg-4">
-                    <div class="singel-course">
-                        <div class="thum">
-                            <div class="image">
-                                <img src="assets/images/course/cu-1.jpg" alt="Course">
-                            </div>
-                            <div class="price">
-                                <span>Free</span>
-                            </div>
-                        </div>
-                        <div class="cont">
-                            <ul>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                            </ul>
-                            <span>(20 Reviws)</span>
-                            <a href="courses-singel.html"><h4>Learn basis javascirpt from start for beginner</h4></a>
-                            <div class="course-teacher">
-                                <div class="thum">
-                                    <a href="#"><img src="assets/images/course/teacher/t-1.jpg" alt="teacher"></a>
-                                </div>
-                                <div class="name">
-                                    <a href="#"><h6>Mark anthem</h6></a>
-                                </div>
-                                <div class="admin">
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-user"></i><span>31</span></a></li>
-                                        <li><a href="#"><i class="fa fa-heart"></i><span>10</span></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div> <!-- singel course -->
-                </div>
-                <div class="col-lg-4">
-                    <div class="singel-course">
-                        <div class="thum">
-                            <div class="image">
-                                <img src="assets/images/course/cu-2.jpg" alt="Course">
-                            </div>
-                            <div class="price">
-                                <span>Free</span>
-                            </div>
-                        </div>
-                        <div class="cont">
-                            <ul>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                            </ul>
-                            <span>(20 Reviws)</span>
-                            <a href="courses-singel.html"><h4>Learn basis javascirpt from start for beginner</h4></a>
-                            <div class="course-teacher">
-                                <div class="thum">
-                                    <a href="#"><img src="assets/images/course/teacher/t-2.jpg" alt="teacher"></a>
-                                </div>
-                                <div class="name">
-                                    <a href="#"><h6>Mark anthem</h6></a>
-                                </div>
-                                <div class="admin">
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-user"></i><span>31</span></a></li>
-                                        <li><a href="#"><i class="fa fa-heart"></i><span>10</span></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div> <!-- singel course -->
-                </div>
-                <div class="col-lg-4">
-                    <div class="singel-course">
-                        <div class="thum">
-                            <div class="image">
-                                <img src="assets/images/course/cu-3.jpg" alt="Course">
-                            </div>
-                            <div class="price">
-                                <span>Free</span>
-                            </div>
-                        </div>
-                        <div class="cont">
-                            <ul>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                            </ul>
-                            <span>(20 Reviws)</span>
-                            <a href="courses-singel.html"><h4>Learn basis javascirpt from start for beginner</h4></a>
-                            <div class="course-teacher">
-                                <div class="thum">
-                                    <a href="#"><img src="assets/images/course/teacher/t-3.jpg" alt="teacher"></a>
-                                </div>
-                                <div class="name">
-                                    <a href="#"><h6>Mark anthem</h6></a>
-                                </div>
-                                <div class="admin">
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-user"></i><span>31</span></a></li>
-                                        <li><a href="#"><i class="fa fa-heart"></i><span>10</span></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div> <!-- singel course -->
-                </div>
-                <div class="col-lg-4">
-                    <div class="singel-course">
-                        <div class="thum">
-                            <div class="image">
-                                <img src="assets/images/course/cu-4.jpg" alt="Course">
-                            </div>
-                            <div class="price">
-                                <span>Free</span>
-                            </div>
-                        </div>
-                        <div class="cont">
-                            <ul>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                            </ul>
-                            <span>(20 Reviws)</span>
-                            <a href="courses-singel.html"><h4>Learn basis javascirpt from start for beginner</h4></a>
-                            <div class="course-teacher">
-                                <div class="thum">
-                                    <a href="#"><img src="assets/images/course/teacher/t-4.jpg" alt="teacher"></a>
-                                </div>
-                                <div class="name">
-                                    <a href="#"><h6>Mark anthem</h6></a>
-                                </div>
-                                <div class="admin">
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-user"></i><span>31</span></a></li>
-                                        <li><a href="#"><i class="fa fa-heart"></i><span>10</span></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div> <!-- singel course -->
-                </div>
-                <div class="col-lg-4">
-                    <div class="singel-course">
-                        <div class="thum">
-                            <div class="image">
-                                <img src="assets/images/course/cu-5.jpg" alt="Course">
-                            </div>
-                            <div class="price">
-                                <span>Free</span>
-                            </div>
-                        </div>
-                        <div class="cont">
-                            <ul>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                            </ul>
-                            <span>(20 Reviws)</span>
-                            <a href="courses-singel.html"><h4>Learn basis javascirpt from start for beginner</h4></a>
-                            <div class="course-teacher">
-                                <div class="thum">
-                                    <a href="#"><img src="assets/images/course/teacher/t-5.jpg" alt="teacher"></a>
-                                </div>
-                                <div class="name">
-                                    <a href="#"><h6>Mark anthem</h6></a>
-                                </div>
-                                <div class="admin">
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-user"></i><span>31</span></a></li>
-                                        <li><a href="#"><i class="fa fa-heart"></i><span>10</span></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div> <!-- singel course -->
-                </div>
-            </div> <!-- course slied -->
-        </div> <!-- container -->
-    </section>
-    
-    <!--====== COURSE PART ENDS ======-->
-   
-    <!--====== VIDEO FEATURE PART START ======-->
-    
-    
-    
-    <!--====== VIDEO FEATURE PART ENDS ======-->
-   
-    <!--====== TEACHERS PART START ======-->
-    
-    <section id="teachers-part" class="pt-70 pb-120">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5">
-                    <div class="section-title mt-50">
-                        <h5>Featured Teachers</h5>
-                        <h2>Meet Our teachers</h2>
-                    </div> <!-- section title -->
-                    <div class="teachers-cont">
-                        <p>Lorem ipsum gravida nibh vel velit auctor aliquetn sollicitudirem quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet . Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt  mauris. <br> <br> auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet . Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt  mauris</p>
-                        <a href="#" class="main-btn mt-55">Career with us</a>
-                    </div> <!-- teachers cont -->
-                </div>
-                <div class="col-lg-6 offset-lg-1">
-                    <div class="teachers mt-20">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="singel-teachers mt-30 text-center">
-                                    <div class="image">
-                                        <img src="assets/images/teachers/t-1.jpg" alt="Teachers">
-                                    </div>
-                                    <div class="cont">
-                                        <a href="teachers-singel.html"><h6>Mark alen</h6></a>
-                                        <span>Vice chencelor</span>
-                                    </div>
-                                </div> <!-- singel teachers -->
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="singel-teachers mt-30 text-center">
-                                    <div class="image">
-                                        <img src="assets/images/teachers/t-2.jpg" alt="Teachers">
-                                    </div>
-                                    <div class="cont">
-                                        <a href="teachers-singel.html"><h6>David card</h6></a>
-                                        <span>Pro chencelor</span>
-                                    </div>
-                                </div> <!-- singel teachers -->
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="singel-teachers mt-30 text-center">
-                                    <div class="image">
-                                        <img src="assets/images/teachers/t-3.jpg" alt="Teachers">
-                                    </div>
-                                    <div class="cont">
-                                        <a href="teachers-singel.html"><h6>Rebeka alig</h6></a>
-                                        <span>Pro chencelor</span>
-                                    </div>
-                                </div> <!-- singel teachers -->
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="singel-teachers mt-30 text-center">
-                                    <div class="image">
-                                        <img src="assets/images/teachers/t-4.jpg" alt="Teachers">
-                                    </div>
-                                    <div class="cont">
-                                        <a href="teachers-singel.html"><h6>Hanna bein</h6></a>
-                                        <span>Aerobics head</span>
-                                    </div>
-                                </div> <!-- singel teachers -->
-                            </div>
-                        </div> <!-- row -->
-                    </div> <!-- teachers -->
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
-    
-    <!--====== TEACHERS PART ENDS ======-->
-   
-    <!--====== PUBLICATION PART START ======-->
-    
-    <section id="publication-part" class="pt-115 pb-120 gray-bg">
-        <div class="container">
-            <div class="row align-items-end">
-                <div class="col-lg-6 col-md-8 col-sm-7">
-                    <div class="section-title pb-60">
-                        <h5>Publications</h5>
-                        <h2>From Store </h2>
-                    </div> <!-- section title -->
-                </div>
-                <div class="col-lg-6 col-md-4 col-sm-5">
-                    <div class="products-btn text-right pb-60">
-                        <a href="#" class="main-btn">All Products</a>
-                    </div> <!-- products btn -->
-                </div>
-            </div> <!-- row -->
-            <div class="row justify-content-center">
-                <div class="col-lg-3 col-md-6 col-sm-8">
-                    <div class="singel-publication mt-30">
-                        <div class="image">
-                            <img src="assets/images/publication/p-1.jpg" alt="Publication">
-                            <div class="add-cart">
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="cont">
-                            <div class="name">
-                                <a href="shop-singel.html"><h6>Set for life </h6></a>
-                                <span>By Scott Trench</span>
-                            </div>
-                            <div class="button text-right">
-                                <a href="#" class="main-btn">Buy Now ($50)</a>
-                            </div>
-                        </div>
-                    </div> <!-- singel publication -->
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-8">
-                    <div class="singel-publication mt-30">
-                        <div class="image">
-                            <img src="assets/images/publication/p-2.jpg" alt="Publication">
-                            <div class="add-cart">
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="cont">
-                            <div class="name">
-                                <a href="shop-singel.html"><h6>A Daughters </h6></a>
-                                <span>By Scott Trench</span>
-                            </div>
-                            <div class="button text-right">
-                                <a href="#" class="main-btn">Buy Now ($30)</a>
-                            </div>
-                        </div>
-                    </div> <!-- singel publication -->
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-8">
-                    <div class="singel-publication mt-30">
-                        <div class="image">
-                            <img src="assets/images/publication/p-3.jpg" alt="Publication">
-                            <div class="add-cart">
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="cont">
-                            <div class="name">
-                                <a href="shop-singel.html"><h6>A Magnet </h6></a>
-                                <span>By Scott Trench</span>
-                            </div>
-                            <div class="button text-right">
-                                <a href="#" class="main-btn">Buy Now ($20)</a>
-                            </div>
-                        </div>
-                    </div> <!-- singel publication -->
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-8">
-                    <div class="singel-publication mt-30">
-                        <div class="image">
-                            <img src="assets/images/publication/p-4.jpg" alt="Publication">
-                            <div class="add-cart">
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="cont">
-                            <div class="name">
-                                <a href="shop-singel.html"><h6>Pices of light</h6></a>
-                                <span>By Scott Trench</span>
-                            </div>
-                            <div class="button text-right">
-                                <a href="#" class="main-btn">Buy Now ($75)</a>
-                            </div>
-                        </div>
-                    </div> <!-- singel publication -->
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
-    
-    <!--====== PUBLICATION PART ENDS ======-->
-   
-    <!--====== TEASTIMONIAL PART START ======-->
-    
-    <section id="testimonial" class="bg_cover pt-115 pb-115" data-overlay="8" style="background-image: url(assets/images/bg-2.jpg)">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="section-title pb-40">
-                        <h5>Testimonial</h5>
-                        <h2>What they say</h2>
-                    </div> <!-- section title -->
-                </div>
-            </div> <!-- row -->
-            <div class="row testimonial-slied mt-40">
-                <div class="col-lg-6">
-                    <div class="singel-testimonial">
-                        <div class="testimonial-thum">
-                            <img src="assets/images/testimonial/t-1.jpg" alt="Testimonial">
-                            <div class="quote">
-                                <i class="fa fa-quote-right"></i>
-                            </div>
-                        </div>
-                        <div class="testimonial-cont">
-                            <p>Aliquetn sollicitudirem quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet sem nibh id elit sollicitudirem </p>
-                            <h6>Rubina Helen</h6>
-                            <span>Bsc, Engineering</span>
-                        </div>
-                    </div> <!-- singel testimonial -->
-                </div>
-                <div class="col-lg-6">
-                    <div class="singel-testimonial">
-                        <div class="testimonial-thum">
-                            <img src="assets/images/testimonial/t-2.jpg" alt="Testimonial">
-                            <div class="quote">
-                                <i class="fa fa-quote-right"></i>
-                            </div>
-                        </div>
-                        <div class="testimonial-cont">
-                            <p>Aliquetn sollicitudirem quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet sem nibh id elit sollicitudirem </p>
-                            <h6>Rubina Helen</h6>
-                            <span>Bsc, Engineering</span>
-                        </div>
-                    </div> <!-- singel testimonial -->
-                </div>
-                <div class="col-lg-6">
-                    <div class="singel-testimonial">
-                        <div class="testimonial-thum">
-                            <img src="assets/images/testimonial/t-3.jpg" alt="Testimonial">
-                            <div class="quote">
-                                <i class="fa fa-quote-right"></i>
-                            </div>
-                        </div>
-                        <div class="testimonial-cont">
-                            <p>Aliquetn sollicitudirem quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet sem nibh id elit sollicitudirem </p>
-                            <h6>Rubina Helen</h6>
-                            <span>Bsc, Engineering</span>
-                        </div>
-                    </div> <!-- singel testimonial -->
-                </div>
-            </div> <!-- testimonial slied -->
-        </div> <!-- container -->
-    </section>
-    
-    <!--====== TEASTIMONIAL PART ENDS ======-->
-   
-    <!--====== NEWS PART START ======-->
-    
-    <section id="news-part" class="pt-115 pb-110">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="section-title pb-50">
-                        <h5>Latest News</h5>
-                        <h2>From the news</h2>
-                    </div> <!-- section title -->
-                </div>
-            </div> <!-- row -->
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="singel-news mt-30">
-                        <div class="news-thum pb-25">
-                            <img src="assets/images/news/n-1.jpg" alt="News">
-                        </div>
-                        <div class="news-cont">
-                            <ul>
-                                <li><a href="#"><i class="fa fa-calendar"></i>2 December 2018 </a></li>
-                                <li><a href="#"> <span>By</span> Adam linn</a></li>
-                            </ul>
-                            <a href="blog-singel.html"><h3>Tips to grade high cgpa in university life</h3></a>
-                            <p>Lorem ipsum gravida nibh vel velit auctor aliquetn sollicitudirem quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt .</p>
-                        </div>
-                    </div> <!-- singel news -->
-                </div>
-                <div class="col-lg-6">
-                    <div class="singel-news news-list">
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <div class="news-thum mt-30">
-                                    <img src="assets/images/news/ns-1.jpg" alt="News">
-                                </div>
-                            </div>
-                            <div class="col-sm-8">
-                                <div class="news-cont mt-30">
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-calendar"></i>2 December 2018 </a></li>
-                                        <li><a href="#"> <span>By</span> Adam linn</a></li>
-                                    </ul>
-                                    <a href="blog-singel.html"><h3>Intellectual communication</h3></a>
-                                    <p>Gravida nibh vel velit auctor aliquetn sollicitudirem quibibendum auci elit cons  vel.</p>
-                                </div>
-                            </div>
-                        </div> <!-- row -->
-                    </div> <!-- singel news -->
-                    <div class="singel-news news-list">
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <div class="news-thum mt-30">
-                                    <img src="assets/images/news/ns-2.jpg" alt="News">
-                                </div>
-                            </div>
-                            <div class="col-sm-8">
-                                <div class="news-cont mt-30">
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-calendar"></i>2 December 2018 </a></li>
-                                        <li><a href="#"> <span>By</span> Adam linn</a></li>
-                                    </ul>
-                                    <a href="blog-singel.html"><h3>Study makes you perfect</h3></a>
-                                    <p>Gravida nibh vel velit auctor aliquetn sollicitudirem quibibendum auci elit cons  vel.</p>
-                                </div>
-                            </div>
-                        </div> <!-- row -->
-                    </div> <!-- singel news -->
-                    <div class="singel-news news-list">
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <div class="news-thum mt-30">
-                                    <img src="assets/images/news/ns-3.jpg" alt="News">
-                                </div>
-                            </div>
-                            <div class="col-sm-8">
-                                <div class="news-cont mt-30">
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-calendar"></i>2 December 2018 </a></li>
-                                        <li><a href="#"> <span>By</span> Adam linn</a></li>
-                                    </ul>
-                                    <a href="blog-singel.html"><h3>Technology edcution is now....</h3></a>
-                                    <p>Gravida nibh vel velit auctor aliquetn sollicitudirem quibibendum auci elit cons  vel.</p>
-                                </div>
-                            </div>
-                        </div> <!-- row -->
-                    </div> <!-- singel news -->
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
     
     <!--====== NEWS PART ENDS ======-->
    
-    <!--====== PATNAR LOGO PART START ======-->
+    <section class="container">
+        <div class="mb-3 row justify-content-center align-items-center">
+          <div class="slider_1">
+            <div class="slide_1-track-1">
+              <div class="slide_1"><img src="assets/img/companylogo/ABP Network.jpg" loading="lazy"></div>
+              <div class="slide_1"><img src="assets/img/companylogo/Aditya Birla.jpg" loading="lazy"></div>
+              <div class="slide_1"><img src="assets/img/companylogo/Amazon.jpg" loading="lazy"></div>
+              <div class="slide_1"><img src="assets/img/companylogo/Applied Materials.jpg" loading="lazy"></div>
+              <div class="slide_1"><img src="assets/img/companylogo/Bharat Forge.jpg" loading="lazy"></div>
+              <div class="slide_1"><img src="assets/img/companylogo/Capgemini.jpg" loading="lazy"></div>
+              <div class="slide_1"><img src="assets/img/companylogo/Cargill.jpg" loading="lazy"></div>
+              <div class="slide_1"><img src="assets/img/companylogo/Cisco.jpg" loading="lazy"></div>
+              <div class="slide_1"><img src="assets/img/companylogo/Cognizant.jpg" loading="lazy"></div>
+              <div class="slide_1"><img src="assets/img/companylogo/Course5i.jpg" loading="lazy"></div>
+              <div class="slide_1"><img src="assets/img/companylogo/Delhivery.jpg" loading="lazy"></div>
+              <div class="slide_1"><img src="assets/img/companylogo/Deloitte.jpg" loading="lazy"></div>
+              <div class="slide_1"><img src="assets/img/companylogo/DRDO.jpg" loading="lazy"></div>
+              <div class="slide_1"><img src="assets/img/companylogo/Dun &amp; Bradstreet.jpg" loading="lazy"></div>
+              <div class="slide_1"><img src="assets/img/companylogo/Ecolab.jpg" loading="lazy"></div>
+              <div class="slide_1"><img src="assets/img/companylogo/Epsilon.jpg" loading="lazy"></div>
+              <div class="slide_1"><img src="assets/img/companylogo/Ernst and Young.jpg" loading="lazy"></div>
+              <div class="slide_1"><img src="assets/img/companylogo/Ford Motor.jpg" loading="lazy"></div>
+              <div class="slide_1"><img src="assets/img/companylogo/Gavs Technology.jpg" loading="lazy"></div>
+              <div class="slide_1"><img src="assets/img/companylogo/Genpact.jpg" loading="lazy"></div>
+              <div class="slide_1"><img src="assets/img/companylogo/HCL Tech.jpg" loading="lazy"></div>
+              <div class="slide_1"><img src="assets/img/companylogo/HP.jpg" loading="lazy"></div>
+              <div class="slide_1"><img src="assets/img/companylogo/Indian Oil Corporation.jpg" loading="lazy"></div>
+              <div class="slide_1"><img src="assets/img/companylogo/Intel Corporation.jpg" loading="lazy"></div>
+              <div class="slide_1"><img src="assets/img/companylogo/L&amp;T.jpg" loading="lazy"></div>
+              <div class="slide_1"><img src="assets/img/companylogo/Latentview Analytics.jpg" loading="lazy"></div>
+              <div class="slide_1"><img src="assets/img/companylogo/Logitech.jpg" loading="lazy"></div>
+              <div class="slide_1"><img src="assets/img/companylogo/Lowes India.jpg" loading="lazy"></div>
+              <div class="slide_1"><img src="assets/img/companylogo/Marlabs.jpg" loading="lazy"></div>
+              <div class="slide_1"><img src="assets/img/companylogo/Medi Assist.jpg" loading="lazy"></div>
+              <div class="slide_1"><img src="assets/img/companylogo/Microsoft.jpg" loading="lazy"></div>
+              <div class="slide_1"><img src="assets/img/companylogo/Myntra.jpg" loading="lazy"></div>
+              <div class="slide_1"><img src="assets/img/companylogo/Natwest Group.jpg" loading="lazy"></div>
+              <div class="slide_1"><img src="assets/img/companylogo/Oracle.jpg" loading="lazy"></div>
+              <div class="slide_1"><img src="assets/img/companylogo/Pidilite Industries Limited.jpg" loading="lazy"></div>
+              <div class="slide_1"><img src="assets/img/companylogo/Rakuten India.jpg" loading="lazy"></div>
+              <div class="slide_1"><img src="assets/img/companylogo/sabio_logo.jpg" loading="lazy"></div>
+              <div class="slide_1"><img src="assets/img/companylogo/Saint Gobain.jpg" loading="lazy"></div>
+              <div class="slide_1"><img src="assets/img/companylogo/Samsung.jpg" loading="lazy"></div>
+              <div class="slide_1"><img src="assets/img/companylogo/Schneider Electric.jpg" loading="lazy"></div>
+              <div class="slide_1"><img src="assets/img/companylogo/Symphony AI.jpg" loading="lazy"></div>
+              <div class="slide_1"><img src="assets/img/companylogo/Syngenta.jpg" loading="lazy"></div>
+              <div class="slide_1"><img src="assets/img/companylogo/Tech Mahindra.jpg" loading="lazy"></div>
+              <div class="slide_1"><img src="assets/img/companylogo/Tiger Analytics.jpg" loading="lazy"></div>
+              <div class="slide_1"><img src="assets/img/companylogo/Titan.jpg" loading="lazy"></div>
+              <div class="slide_1"><img src="assets/img/companylogo/Tredence.jpg" loading="lazy"></div>
+              <div class="slide_1"><img src="assets/img/companylogo/Verizon.jpg" loading="lazy"></div>
+              <div class="slide_1"><img src="assets/img/companylogo/VuNet.jpg" loading="lazy"></div>
+              <div class="slide_1"><img src="assets/img/companylogo/Wipro.jpg" loading="lazy"></div>
+            </div>
+          </div>
+        </div>
+      </section>
     
-    <div id="patnar-logo" class="pt-40 pb-80 gray-bg">
-        <div class="container">
-            <div class="row patnar-slied">
-                <div class="col-lg-12">
-                    <div class="singel-patnar text-center mt-40">
-                        <img src="assets/images/patnar-logo/p-1.png" alt="Logo">
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="singel-patnar text-center mt-40">
-                        <img src="assets/images/patnar-logo/p-2.png" alt="Logo">
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="singel-patnar text-center mt-40">
-                        <img src="assets/images/patnar-logo/p-3.png" alt="Logo">
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="singel-patnar text-center mt-40">
-                        <img src="assets/images/patnar-logo/p-4.png" alt="Logo">
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="singel-patnar text-center mt-40">
-                        <img src="assets/images/patnar-logo/p-2.png" alt="Logo">
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="singel-patnar text-center mt-40">
-                        <img src="assets/images/patnar-logo/p-3.png" alt="Logo">
-                    </div>
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </div> 
-    
-    <!--====== PATNAR LOGO PART ENDS ======-->
-   
+
     <!--====== FOOTER PART START ======-->
+    
     
     <footer id="footer-part">
         <div class="footer-top pt-40 pb-70">
@@ -1142,53 +851,21 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="footer-about mt-40">
                             <div class="logo">
-                                <a href="#"><img src="assets/images/logo-2.png" alt="Logo"></a>
+                                <a href="#"><img src="assets/img/logo.png" alt="Logo"></a>
                             </div>
-                            <p>Gravida nibh vel velit auctor aliquetn quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate.</p>
+                            <p>IITM BS Degree Office, 3rd Floor, ICSR Building, IIT Madras, Chennai - 600036</p>
+                            
                             <ul class="mt-20">
-                                <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="https://www.facebook.com/iitmadrasbsdegree" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
+                                <li><a href="https://twitter.com/iitm_bs" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://www.instagram.com/iitmadras_bs/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="https://www.linkedin.com/company/iit-madras-bs-datascience-programme/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="https://wa.me/message/IVROM2UN7XIJL1" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
                             </ul>
-                        </div> <!-- footer about -->
+                            
+                        </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="footer-link mt-40">
-                            <div class="footer-title pb-25">
-                                <h6>Sitemap</h6>
-                            </div>
-                            <ul>
-                                <li><a href="index-2.html"><i class="fa fa-angle-right"></i>Home</a></li>
-                                <li><a href="about.html"><i class="fa fa-angle-right"></i>About us</a></li>
-                                <li><a href="courses.html"><i class="fa fa-angle-right"></i>Courses</a></li>
-                                <li><a href="blog.html"><i class="fa fa-angle-right"></i>News</a></li>
-                                <li><a href="events.html"><i class="fa fa-angle-right"></i>Event</a></li>
-                            </ul>
-                            <ul>
-                                <li><a href="#"><i class="fa fa-angle-right"></i>Gallery</a></li>
-                                <li><a href="shop.html"><i class="fa fa-angle-right"></i>Shop</a></li>
-                                <li><a href="teachers.html"><i class="fa fa-angle-right"></i>Teachers</a></li>
-                                <li><a href="#"><i class="fa fa-angle-right"></i>Support</a></li>
-                                <li><a href="contact.html"><i class="fa fa-angle-right"></i>Contact</a></li>
-                            </ul>
-                        </div> <!-- footer link -->
-                    </div>
-                    <div class="col-lg-2 col-md-6 col-sm-6">
-                        <div class="footer-link support mt-40">
-                            <div class="footer-title pb-25">
-                                <h6>Support</h6>
-                            </div>
-                            <ul>
-                                <li><a href="#"><i class="fa fa-angle-right"></i>FAQS</a></li>
-                                <li><a href="#"><i class="fa fa-angle-right"></i>Privacy</a></li>
-                                <li><a href="#"><i class="fa fa-angle-right"></i>Policy</a></li>
-                                <li><a href="#"><i class="fa fa-angle-right"></i>Support</a></li>
-                                <li><a href="#"><i class="fa fa-angle-right"></i>Documentation</a></li>
-                            </ul>
-                        </div> <!-- support -->
-                    </div>
-                    <div class="col-lg-3 col-md-6">
                         <div class="footer-address mt-40">
                             <div class="footer-title pb-25">
                                 <h6>Contact Us</h6>
@@ -1199,7 +876,7 @@
                                         <i class="fa fa-home"></i>
                                     </div>
                                     <div class="cont">
-                                        <p>143 castle road 517 district, kiyev port south Canada</p>
+                                        <p>IITM BS Degree Office, 3rd Floor, ICSR Building, IIT Madras, Chennai - 600036</p>
                                     </div>
                                 </li>
                                 <li>
@@ -1207,7 +884,7 @@
                                         <i class="fa fa-phone"></i>
                                     </div>
                                     <div class="cont">
-                                        <p>+3 123 456 789</p>
+                                        <p>7850999966</p>
                                     </div>
                                 </li>
                                 <li>
@@ -1215,33 +892,42 @@
                                         <i class="fa fa-envelope-o"></i>
                                     </div>
                                     <div class="cont">
-                                        <p>info@yourmail.com</p>
+                                        <p>support@study.iitm.ac.in</p>
                                     </div>
                                 </li>
                             </ul>
-                        </div> <!-- footer address -->
+                        </div>
                     </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-        </div> <!-- footer top -->
-        
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="footer-info mt-40">
+                            <div class="footer-title pb-25">
+                                <h6>Important Info</h6>
+                            </div>
+                            <p style="color: white;">Please use ONLY the above methods for any queries regarding the program. Our normal response time is 3 working days. It might take a little longer during busy periods. We will share Google Meet links during such periods.</p>
+                            <p style="color: white;">Due to the high volume of calls we receive every day, there might be long wait times. In some cases, you might have to call multiple times to successfully connect to us.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="footer-copyright pt-10 pb-25">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-md-7">
                         <div class="copyright text-md-left text-center pt-15">
-                            <p><a target="_blank" href="https://www.templateshub.net">Templates Hub</a> </p>
+                            <p>© IIT Madras. All rights reserved.</p>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="copyright text-md-right text-center pt-15">
-                           
+                    <div class="col-md-5">
+                        <div class="text-md-right text-center pt-15">
+                            <p style="color: white;">View Site Map &nbsp; &nbsp;|&nbsp; &nbsp; Privacy Policy | Terms of Service</p>
                         </div>
                     </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-        </div> <!-- footer copyright -->
+                </div>
+            </div>
+        </div>
     </footer>
+    
     
     <!--====== FOOTER PART ENDS ======-->
    

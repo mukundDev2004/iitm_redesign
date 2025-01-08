@@ -421,8 +421,8 @@ p {
     border-bottom: 1px solid #cecece;
     -webkit-box-shadow: 0px 0px 191px 0px rgba(0,0,0,0.06);
     box-shadow: 0px 0px 191px 0px rgba(0,0,0,0.06);
-    -webkit-animation: sticky 2s;
-    animation: sticky 2s;
+    -webkit-animation: sticky 1s;
+    animation: sticky 1s;
 }
 
 @-webkit-keyframes sticky {
@@ -523,7 +523,7 @@ p {
     transform: all 0.4s linear;
 }
 
-.navbar .navbar-toggler .icon-bar {
+.navbar .navbar-toggler .icon1-bar {
 	width: 30px;
 	height: 2px;
 	background-color: #07294d;
@@ -534,15 +534,15 @@ p {
     transition: all 0.4s linear;
 }
 
-.navbar .navbar-toggler.active .icon-bar:nth-of-type(1){
+.navbar .navbar-toggler.active .icon1-bar:nth-of-type(1){
     -webkit-transform: rotate(46deg);
     transform: rotate(46deg);
     top: 7px;
 }
-.navbar .navbar-toggler.active .icon-bar:nth-of-type(2){
+.navbar .navbar-toggler.active .icon1-bar:nth-of-type(2){
     opacity: 0;
 }
-.navbar .navbar-toggler.active .icon-bar:nth-of-type(3){
+.navbar .navbar-toggler.active .icon1-bar:nth-of-type(3){
     -webkit-transform: rotate(134deg);
     transform: rotate(134deg);
     top: -7px;
@@ -631,10 +631,10 @@ p {
     color: #ffc600;
 }
 
-.navigation-3 .navbar .navbar-toggler .icon-bar{
+.navigation-3 .navbar .navbar-toggler .icon1-bar{
     background-color: #fff;
 }
-.navigation-3.sticky .navbar .navbar-toggler .icon-bar{
+.navigation-3.sticky .navbar .navbar-toggler .icon1-bar{
     background-color: #07294d;
 }
 
@@ -934,7 +934,7 @@ p {
 	border-radius: 5px;
 	display: block;
 }
-.singel-category .icon{
+.singel-category .icon1{
     display: inline-block;
 }
 .singel-category .cont {
@@ -1340,7 +1340,7 @@ p {
     padding-top: 55px;
     overflow: hidden;
 }
-.feature ul li .singel-feature .icon{
+.feature ul li .singel-feature .icon1{
     float: left;
     overflow: hidden;
     display: inline-block;
@@ -1746,7 +1746,7 @@ p {
     margin-bottom: 0;
 }
 
-.footer-address ul li .icon i{
+.footer-address ul li .icon1 i{
     font-size: 18px;
     color: #ffc600;
     position: absolute;
@@ -2989,12 +2989,12 @@ p {
 .events-address ul li .singel-address{
     position: relative;
 }
-.events-address ul li .singel-address .icon{
+.events-address ul li .singel-address .icon1{
     position: absolute;
     top: 0;
     left: 0;
 }
-.events-address ul li .singel-address .icon i{
+.events-address ul li .singel-address .icon1 i{
     font-size: 15px;
     color: #ffc600;
 }
@@ -3672,7 +3672,7 @@ p.form-message.error {
     align-items: center;
 }
 
-.contact-address ul li .singel-address .icon i{
+.contact-address ul li .singel-address .icon1 i{
     width: 50px;
     line-height: 50px;
     border-radius: 50%;

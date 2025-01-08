@@ -39,29 +39,58 @@
   <!-- Nucleo Icons -->
   <!-- Font Awesome Icons -->
   <!-- CSS Files -->
+  <style>
+        
+    :root {
+    --theme-color: #009db5; /* Default color */
+    }
+    .footer-copyright {
+        background-color: #006979 !important;
+    }
+    .fa {
+        margin: 4px;
+    }
+</style>
   <link rel="apple-touch-icon" sizes="76x76" href="https://study.iitm.ac.in/es/assets/img/logo.ico">
 
   <link rel="icon" href="https://study.iitm.ac.in/es/assets/img/logo.ico">
 
   <link rel="author" href="https://study.iitm.ac.in/es/humans.txt">
 
-  <link href="./IIT Madras Degree in Electronic Systems_files/css2" rel="stylesheet">
+  <link href="../assets/css/es/css2" rel="stylesheet">
 
-  <link href="./IIT Madras Degree in Electronic Systems_files/all.css" rel="stylesheet">
+  <link href="../assets/css/es/all.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="./IIT Madras Degree in Electronic Systems_files/nucleo-icons.css">
+  <link rel="stylesheet" href="../assets/css/es/nucleo-icons.css">
 
-  <link rel="stylesheet" href="./IIT Madras Degree in Electronic Systems_files/nucleo-svg.css">
+  <link rel="stylesheet" href="../assets/css/es/nucleo-svg.css">
 
-  <link rel="stylesheet" href="./IIT Madras Degree in Electronic Systems_files/font-awesome.css">
+  <link rel="stylesheet" href="../assets/css/es/nucleo-svg.css">
 
-  <link rel="stylesheet" href="./IIT Madras Degree in Electronic Systems_files/nucleo-svg.css">
+  <link rel="stylesheet" href="../assets/css/es/argon-design-system.css">
 
-  <link rel="stylesheet" href="./IIT Madras Degree in Electronic Systems_files/argon-design-system.css">
+  <link rel="stylesheet" href="../assets/css/es.css">
 
-  <link rel="stylesheet" href="./IIT Madras Degree in Electronic Systems_files/index.css">
+  <link rel="stylesheet" href="../assets/css/font-awesome.css">
 
-  <link type="text/css" rel="stylesheet" charset="UTF-8" href="./IIT Madras Degree in Electronic Systems_files/m=el_main_css">
+
+  <!--====== Nice Select css ======-->
+  <link rel="stylesheet" href="../assets/css/nice-select.css">
+    
+  <!--====== Default css ======-->
+  <link rel="stylesheet" href="../assets/css/default.css">
+
+  <!--====== Style css ======-->
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <!--====== Responsive css ======-->
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <!--====== Main js ======-->
+  <script src="../assets/js/main.js"></script>
+  <!-- <link type="text/css" rel="stylesheet" charset="UTF-8"
+    href="./IIT Madras Degree in Electronic Systems_files/m=el_main_css"> -->
   <script type="text/javascript" charset="UTF-8"
     src="./IIT Madras Degree in Electronic Systems_files/m=el_main"></script>
   <script src="./IIT Madras Degree in Electronic Systems_files/core.junnp81e.js.download" type="module"></script>
@@ -74,7 +103,17 @@
       /* fixed header height*/
       margin: -155px 0 0;
       /* negative fixed header height */
-      
+
+    }
+
+    .navbar {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1rem;
+      box-shadow: 0px 0px 0px #00000000 !important;
     }
 
     h2:target::before {
@@ -84,7 +123,7 @@
       /* fixed header height*/
       margin: -155px 0 0;
       /* negative fixed header height */
-      
+
     }
 
     div:target::before {
@@ -94,10 +133,30 @@
       /* fixed header height*/
       margin: -155px 0 0;
       /* negative fixed header height */
-      
+
     }
 
-    
+    @media (min-width: 1800px) {
+
+      .container-xl,
+      .container-lg,
+      .container-md,
+      .container-sm,
+      .container {
+        max-width: 1720px;
+      }
+    }
+
+    @media (min-width: 1600px) {
+
+      .container-xl,
+      .container-lg,
+      .container-md,
+      .container-sm,
+      .container {
+        max-width: 1520px;
+      }
+    }
   </style>
   <script attributionsrc="" type="text/javascript" async=""
     src="./IIT Madras Degree in Electronic Systems_files/f.txt"></script>
@@ -109,264 +168,216 @@
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5NSK6ZMK" height="0" width="0"
       style="display: none; visibility: hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-  <div id="fixedTop" class="fixed-top">
-    <section class="google-translator bg-light">
-      <div id="google_translate_element" class="d-none">
-        <div class="skiptranslate goog-te-gadget" dir="ltr" style="">
-          <div id=":0.targetLanguage" class="goog-te-gadget-simple" style="white-space: nowrap;"><img
-              src="./IIT Madras Degree in Electronic Systems_files/cleardot.gif" class="goog-te-gadget-icon" alt=""
-              style="background-image: url(&quot;https://translate.googleapis.com/translate_static/img/te_ctrl3.gif&quot;); background-position: -65px 0px;"><span
-              style="vertical-align: middle;"><a aria-haspopup="true" class="VIpgJd-ZVi9od-xl07Ob-lTBxed"
-                href="https://study.iitm.ac.in/es/#"><span>Select Language</span><img
-                  src="./IIT Madras Degree in Electronic Systems_files/cleardot.gif" alt="" width="1" height="1"><span
-                  style="border-left: 1px solid rgb(187, 187, 187);">​</span><img
-                  src="./IIT Madras Degree in Electronic Systems_files/cleardot.gif" alt="" width="1" height="1"><span
-                  aria-hidden="true" style="color: rgb(118, 118, 118);">▼</span></a></span></div>
-        </div>
-      </div>
-      <div class="mr-4">
-        <ul class="translation-links d-flex justify-content-end m-0 p-0" style="list-style-type: none">
-          <li class="mr-1">
-            <a id="english" data-lang="English" class="notranslate translation-lang text-gray active-lang" role="button"
-              onclick="changeLanguage(this)">English</a>
-          </li>
-          <li class="mr-1">
-            <a id="hindi" data-lang="Hindi" class="notranslate translation-lang text-gray" role="button"
-              onclick="changeLanguage(this)">
-              | हिंदी
-            </a>
-          </li>
-          <li class="mr-1">
-            <a id="tamil" data-lang="Tamil" class="notranslate translation-lang text-gray" role="button"
-              onclick="changeLanguage(this)">
-              | தமிழ்
-            </a>
-          </li>
-          <li class="mr-1">
-            <a id="telugu" data-lang="Telugu" class="notranslate translation-lang text-gray" role="button"
-              onclick="changeLanguage(this)">
-              | తెలుగు</a>
-          </li>
-          <li class="mr-1">
-            <a id="malyalam" data-lang="Malayalam" class="notranslate translation-lang text-gray" role="button"
-              onclick="changeLanguage(this)">
-              | മലയാളം</a>
-          </li>
-          <li class="mr-1">
-            <a id="kannada" data-lang="Kannada" class="notranslate translation-lang text-gray" role="button"
-              onclick="changeLanguage(this)">
-              | ಕನ್ನಡ</a>
-          </li>
-          <li class="mr-1">
-            <a id="marathi" data-lang="Marathi" class="notranslate translation-lang text-gray" role="button"
-              onclick="changeLanguage(this)">
-              | मराठी</a>
-          </li>
-          <li class="mr-1">
-            <a id="gujrati" data-lang="Gujarati" class="notranslate translation-lang text-gray" role="button"
-              onclick="changeLanguage(this)">
-              | ગુજરાતી
-            </a>
-          </li>
-          <li>
-            <a id="Banga" data-lang="Bengali" class="notranslate translation-lang text-gray" role="button"
-              onclick="changeLanguage(this)">
-              | বাংলা</a>
-          </li>
-        </ul>
-      </div>
-    </section>
 
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-navbar">
-      <a class="navbar-brand mr-lg-5 pl-3" href="https://study.iitm.ac.in/es/index.html">
-        <img style="height: 58px" src="./IIT Madras Degree in Electronic Systems_files/IITMOD-Logo.svg"
-          alt="IIT Madras Online Degree Program">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-default"
-        aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbar-default">
-        <div class="navbar-collapse-header">
+
+
+    <header id="header-part">
+      <div class="header-logo-support pt-30 pb-30">
+        <div class="container">
           <div class="row">
-            <div class="col-6 collapse-brand">
-              <a href="https://study.iitm.ac.in/es/index.html">
-                <img src="./IIT Madras Degree in Electronic Systems_files/logo.png">
-              </a>
+            <div class="col-lg-4 col-md-4">
+              <div class="logo">
+                <a href="index-2.html">
+                  <img src="../assets/img/logo.png" alt="Logo">
+                </a>
+              </div>
             </div>
-            <div class="col-6 collapse-close">
-              <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-default"
-                aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-              </button>
+            <div class="col-lg-8 col-md-8">
+              <div class="support-button float-right d-none d-md-block">
+                <div class="support float-left">
+                  <div class="icon1">
+                    <img src="../assets/img/all-icon/support.png" alt="icon">
+                  </div>
+                  <div class="cont">
+                    <p>Need Help? call us</p>
+                    <span>987 654 3210</span>
+                  </div>
+                </div>
+                <div class="button float-left">
+                  <a href="#" class="main-btn">SIGN IN</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <ul class="navbar-nav ml-lg-auto">
-          <li class="nav-item mr-0 dropdown">
-            <a class="nav-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-              style="font-weight: 600">
-
-              Academics
-
-              <i class="fas fa-angle-down"></i>
-            </a>
-            <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbar-default_dropdown_1">
-              <a class="dropdown-item" href="https://study.iitm.ac.in/es/academics.html#AC1">Overall Structure</a>
-              <!-- <a class="dropdown-item" href="academics.html#AC2"
-                  >Term Structure</a
-                > -->
-              <a class="dropdown-item" href="https://study.iitm.ac.in/es/academics.html#AC3">Course Registrations
-              </a>
-              <a class="dropdown-item" href="https://study.iitm.ac.in/es/academics.html#AC4">Assessments</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="https://study.iitm.ac.in/es/academics.html#AC9">Exam Cities</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="https://study.iitm.ac.in/es/academics.html#AC10">Fee Structure</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="https://study.iitm.ac.in/es/academics.html#AC11">Foundation Level</a>
-              <a class="dropdown-item" href="https://study.iitm.ac.in/es/academics.html#AC12">Diploma Level</a>
-              <!-- <a class="dropdown-item" href="academics.html#AC15"
-                  >BSc Degree Level</a
-                > -->
-              <a class="dropdown-item" href="https://study.iitm.ac.in/es/academics.html#AC16">BS Degree Level</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="https://study.iitm.ac.in/es/academics.html#AC17">Sample Certificates</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="https://study.iitm.ac.in/es/academic_calendar.html">Academic Calendar</a>
-            </div>
-          </li>
-          <li class="nav-item mr-0 dropdown">
-            <a class="nav-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-              style="font-weight: 600">
-
-              Admissions
-
-              <i class="fas fa-angle-down"></i>
-            </a>
-            <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbar-default_dropdown_1">
-              <a class="dropdown-item" href="https://study.iitm.ac.in/es/admissions.html#AD0">Important Dates</a>
-              <a class="dropdown-item" href="https://study.iitm.ac.in/es/admissions.html#AD1">Mandatory Requirements</a>
-              <div class="dropdown-divider"></div>
-              <!-- <a class="dropdown-item text-primary" href="admissions.html#AD2"> Two Admission Paths:</a>
-                            <a class="dropdown-item" href="admissions.html#AD2">Regular Entry</a>
-                            <a class="dropdown-item" href="admissions.html#AD3">Diploma Only Entry</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item text-primary" href="admissions.html#AD4"> Regular Entry:</a> -->
-              <a class="dropdown-item" href="https://study.iitm.ac.in/es/admissions.html#AD4">Eligibility to Apply</a>
-              <a class="dropdown-item" href="https://study.iitm.ac.in/es/admissions.html#AD5">Application Process</a>
-              <a class="dropdown-item" href="https://study.iitm.ac.in/es/admissions.html#AD6">Admission to the
-                Foundation Level</a>
-              <i><a class="dropdown-item" href="https://study.iitm.ac.in/es/admissions.html#AD7">1. Regular Entry
-                </a></i>
-              <i><a class="dropdown-item" href="https://study.iitm.ac.in/es/admissions.html#AD8">2. JEE-based Entry
-                </a></i>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="https://study.iitm.ac.in/es/admissions.html#AD9">International Students</a>
-            </div>
-          </li>
-          <li class="dropdown nav-item mr-0">
-            <a class="nav-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-              style="font-weight: 600">
-
-              Resources
-
-              <i class="fas fa-angle-down"></i>
-            </a>
-            <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbar-default_dropdown_1">
-              <a class="dropdown-item" href="https://study.iitm.ac.in/es/helpvideos.html">Help Videos</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="https://study.iitm.ac.in/es/inthemedia.html">In the Media</a>
-              <a class="dropdown-item" href="https://study.iitm.ac.in/es/archive.html">Archive</a>
-            </div>
-          </li>
-          <li class="dropdown nav-item mr-0">
-            <a class="nav-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-              style="font-weight: 600;">
-
-              Student Life
-
-              <i class="fas fa-angle-down"></i>
-            </a>
-            <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbar-default_dropdown_1">
-              <a class="dropdown-item" href="https://study.iitm.ac.in/es/student_life.html">Student Life</a>
-              <a class="dropdown-item" href="https://sites.google.com/ds.study.iitm.ac.in/paradox-23/home"
-                target="_blank">PARADOX / Student Festivals</a>
-            </div>
-          </li>
-          <li class="nav-item mr-0">
-            <a class="nav-link" style="font-weight: 600" href="https://study.iitm.ac.in/es/testimonials.html">
-
-              Testimonials
-
-            </a>
-          </li>
-          <li class="nav-item mr-0">
-            <a class="nav-link" style="font-weight: 600" href="https://study.iitm.ac.in/es/events.html">
-
-              Events
-
-            </a>
-          </li>
-          <li class="nav-item mr-0">
-            <a class="nav-link" style="font-weight: 600" href="https://study.iitm.ac.in/es/faq.html">
-
-
-              FAQ
-
-            </a>
-          </li>
-          <li class="dropdown nav-item mr-0">
-            <a class="nav-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-              style="font-weight: 600">
-
-              About IITM
-
-              <i class="fas fa-angle-down"></i>
-            </a>
-            <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbar-default_dropdown_1">
-              <a class="dropdown-item" href="https://study.iitm.ac.in/es/aboutIITM.html">About IIT Madras</a>
-              <a class="dropdown-item" href="https://study.iitm.ac.in/es/aboutIITM.html#AB1">Faculty Co-ordinators</a>
-
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="https://study.iitm.ac.in/es/aboutIITM.html#footer">Contact Us</a>
-
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" target="_blank" href="https://podgoodies.iitmadrasonline.in/">Merchandise</a>
-
-            </div>
-          </li>
-
-
-          <!-- <li class="nav-item mr-0">
-              <a
-                class="nav-link"
-                style="font-weight: 600"
-                href="partnerships.html"
-              >
-                
-                  Partnerships
-                
-              </a>
-            </li> -->
-          <li class="nav-item mr-0">
-            <a class="nav-link text-decoration-none" href="https://es.study.iitm.ac.in/"><button
-                class="btn btn-sm btn-outline-default">
-                SIGN IN
-              </button></a>
-          </li>
-        </ul>
       </div>
-    </nav>
-    <!-- End Navbar -->
 
+      <div class="navigation">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 col-md-10 col-sm-9 col-8 d-flex justify-content-center">
+              <nav class="navbar navbar-expand-lg">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                  data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
 
+                <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto d-flex flex-wrap">
+                    <li class="nav-item">
+                      <a href="#">Academics</a>
+                      <ul class="sub-menu">
+                        <li><a href="https://study.iitm.ac.in/ds/academics.html#AC1">Overall Structure</a></li>
+                        <li><a href="https://study.iitm.ac.in/ds/academics.html#AC2">Term Structure</a></li>
+                        <li><a href="https://study.iitm.ac.in/ds/academics.html#AC3">Course Registrations</a></li>
+                        <li><a href="https://study.iitm.ac.in/ds/academics.html#AC4">Assessments</a></li>
+                        <div class="dropdown-divider"></div>
+                        <li><a href="https://study.iitm.ac.in/ds/academics.html#AC9">Exam Cities</a></li>
+                        <div class="dropdown-divider"></div>
+                        <li><a href="https://study.iitm.ac.in/ds/academics.html#AC10">Fee Structure</a></li>
+                        <div class="dropdown-divider"></div>
+                        <li><a href="https://study.iitm.ac.in/ds/academics.html#AC11">Foundation Level</a></li>
+                        <li><a href="https://study.iitm.ac.in/ds/academics.html#AC12">Diploma Level</a></li>
+                        <li><a href="https://study.iitm.ac.in/ds/academics.html#AC15">BSc Degree Level</a></li>
+                        <li><a href="https://study.iitm.ac.in/ds/academics.html#AC16">BS Degree Level</a></li>
+                        <div class="dropdown-divider"></div>
+                        <li><a href="https://study.iitm.ac.in/ds/academics.html#AC17">Sample Certificates</a></li>
+                        <div class="dropdown-divider"></div>
+                        <li><a href="https://study.iitm.ac.in/ds/academic_calendar.html">Academic Calendar</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#">Admissions</a>
+                      <ul class="sub-menu">
+                        <li><a href="https://study.iitm.ac.in/ds/admissions.html#AD0">Important Dates</a></li>
+                        <li><a href="https://study.iitm.ac.in/ds/admissions.html#AD1">Mandatory Requirements</a></li>
+                        <div class="dropdown-divider"></div>
+                        <li><a href="https://study.iitm.ac.in/ds/admissions.html#AD4">Eligibility to Apply</a></li>
+                        <li><a href="https://study.iitm.ac.in/ds/admissions.html#AD5">Application Process</a></li>
+                        <li><a href="https://study.iitm.ac.in/ds/admissions.html#AD6">Admission to the Foundation
+                            Level</a></li>
+                        <li><a href="https://study.iitm.ac.in/ds/admissions.html#AD7">1. Regular Entry</a></li>
+                        <li><a href="https://study.iitm.ac.in/ds/admissions.html#AD8">2. JEE-based Entry</a></li>
+                        <div class="dropdown-divider"></div>
+                        <li><a href="https://study.iitm.ac.in/ds/admissions.html#AD9">International Students</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#">Resources</a>
+                      <ul class="sub-menu">
+                        <li><a href="https://study.iitm.ac.in/ds/helpvideos.html">Help Videos</a></li>
+                        <div class="dropdown-divider"></div>
+                        <li><a href="https://study.iitm.ac.in/ds/inthemedia.html">In the Media</a></li>
+                        <li><a href="https://study.iitm.ac.in/ds/archive.html">Archive</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#">Student Life</a>
+                      <ul class="sub-menu">
+                        <li><a href="https://study.iitm.ac.in/ds/student_life.html">Student Houses & Societies</a></li>
+                        <li><a href="https://sites.google.com/ds.study.iitm.ac.in/paradox-23/home"
+                            target="_blank">PARADOX / Student Festivals</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a href="https://school-connect.study.iitm.ac.in/" target="_blank">School Connect</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#">Achievements</a>
+                      <ul class="sub-menu">
+                        <li><a href="#">Recognition</a></li>
+                        <li><a href="https://study.iitm.ac.in/student-achievements/toppers" target="_blank">1. Toppers
+                            Page</a></li>
+                        <li><a href="https://study.iitm.ac.in/student-achievements/projects" target="_blank">2.
+                            Student's Best Projects</a></li>
+                        <li><a href="https://study.iitm.ac.in/student-achievements/interns" target="_blank">3. Teaching
+                            Assistance</a></li>
+                        <li><a href="https://study.iitm.ac.in/student-achievements/alumni" target="_blank">4. Alumni</a>
+                        </li>
+                        <div class="dropdown-divider"></div>
+                        <li><a href="https://study.iitm.ac.in/ds/testimonials.html">Testimonials</a></li>
+                        <div class="dropdown-divider"></div>
+                        <li><a href="https://sites.google.com/ds.study.iitm.ac.in/booksandpublications/home"
+                            target="_blank">Research and Publication</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a href="https://study.iitm.ac.in/ds/events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="https://study.iitm.ac.in/ds/faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#">About IITM</a>
+                      <ul class="sub-menu">
+                        <li><a href="about.html">About IIT Madras</a></li>
+                        <li><a href="about.html#FC">Faculty Co-ordinators</a></li>
+                        <div class="dropdown-divider"></div>
+                        <li><a href="about.html#footer">Contact Us</a></li>
+                        <div class="dropdown-divider"></div>
+                        <li><a href="https://podgoodies.iitmadrasonline.in/" target="_blank">Merchandise</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a href="https://study.iitm.ac.in/ds/partnerships.html">Partnerships</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="https://study.iitm.ac.in/ds/placements/" target="_blank">Placements</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="col-4 col-lg-2 col-md-2 col-sm-3 d-flex justify-content-end align-items-center">
+              <div class="text-right d-flex align-items-center">
+                <div class="right-icon">
+                  <ul class="m-0 p-0 d-flex align-items-center" style="list-style-type: none">
+                    <li><a href="#" id="search"><i class="fa fa-search"></i></a></li>
+                  </ul>
+                </div>
+                <div class="dropdown ml-3">
+                  <select class="form-select" id="languageSelect" aria-label="Language select"
+                    onchange="changeLanguage(this)" style="display: none;">
+                    <option value="English" selected>English</option>
+                    <option value="Hindi">हिंदी</option>
+                    <option value="Tamil">தமிழ்</option>
+                    <option value="Telugu">తెలుగు</option>
+                    <option value="Malayalam">മലയാളം</option>
+                    <option value="Kannada">ಕನ್ನಡ</option>
+                    <option value="Marathi">मराठी</option>
+                    <option value="Gujarati">ગુજરાતી</option>
+                    <option value="Bengali">বাংলা</option>
+                  </select>
+                  <div class="nice-select form-select" tabindex="0"><span class="current">English</span>
+                    <ul class="list">
+                      <li data-value="English" class="option selected">English</li>
+                      <li data-value="Hindi" class="option">हिंदी</li>
+                      <li data-value="Tamil" class="option">தமிழ்</li>
+                      <li data-value="Telugu" class="option">తెలుగు</li>
+                      <li data-value="Malayalam" class="option">മലയാളം</li>
+                      <li data-value="Kannada" class="option">ಕನ್ನಡ</li>
+                      <li data-value="Marathi" class="option">मराठी</li>
+                      <li data-value="Gujarati" class="option">ગુજરાતી</li>
+                      <li data-value="Bengali" class="option">বাংলা</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+<script>
+  window.addEventListener('scroll', function() {
+    var scroll = window.scrollY || document.documentElement.scrollTop;
+    var navigation = document.querySelector('.navigation');
+
+    if (scroll > 170) {
+        navigation.classList.add('sticky');
+    } else {
+        navigation.classList.remove('sticky');
+    }
+});
+
+</script>
     <!-- notifications -->
     <div id="notification" class="xl+notification">
-      <div class="d-md-flex justify-content-center text-highlights">
+      <div class="d-md-flex justify-content-center">
 
         <div class="text-lighter notificationText mr-2">
           Applications Open now for January 2025 Batch | Applications Close: January 02, 2025 | Exam: February 23, 2025
@@ -378,7 +389,6 @@
       </div>
     </div>
     <!-- end-notifications -->
-  </div>
   <!-- scrollToTop -->
   <button id="scrollToTop" onclick="scrollToTop();" class="scrollToTop bg-primary shadow-lg--hover"
     style="display: none;">
@@ -387,7 +397,7 @@
 
 
   <!-- Content -->
-  <div id="mainContent" style="margin-top: 155px;">
+  <div id="mainContent" >
     <!-- Mob -->
     <div id="mobNotification" class="container-fluid xl-notification">
       <div class="row justify-content-center align-items-center pt-2 pr-2 pl-2 pb-4">
@@ -545,8 +555,8 @@
 
     <div class="container-md mb-4">
       <picture>
-        <source media="(min-width: 1000px)" srcset="assets/img/homepage/qsaward_desktop.jpg">
-        <img src="./IIT Madras Degree in Electronic Systems_files/qsaward_mobile.jpg" alt="QS Award" class="img-fluid">
+        <source media="(min-width: 1000px)" srcset="../assets/img/homepage/qsaward_desktop.jpg">
+        <img src="../assets/img/homepage/qsaward_desktop.jpg" alt="QS Award" class="img-fluid">
       </picture>
       <!-- <img
           class="img-fluid"
@@ -936,135 +946,86 @@
 
 
 
-  <footer id="footer" class="bg-primary py-3">
-    <div class="container-fluid container-sm">
-      <div class="h5 text-lighter">Contact Us</div>
-      <div class="row pt-2 pb-2">
-        <div class="col-sm-12 col-md-5 text-lighter">
-          <div class="d-flex footer-text">
-            <div style="flex-basis: 8%">
-              <img style="width: 1rem" src="./IIT Madras Degree in Electronic Systems_files/Footer icon-location.svg">
-            </div>
-            <div style="flex-basis: 90%">
-              IITM BS Degree Office, 3rd Floor, ICSR Building,<br>
-              IIT Madras, Chennai - 600036
+  <!--====== FOOTER PART START ======-->
+
+
+  <footer id="footer-part">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <!-- About Section -->
+          <div class="col-lg-5 col-md-6">
+            <div class="footer-about mt-40">
+              <div class="logo">
+                <a href="#"><img src="../assets/img/logo.png" alt="IIT Madras Online Degree Program"></a>
+              </div>
+              <p>IITM BS Degree Office, 3rd Floor, ICSR Building, IIT Madras, Chennai - 600036</p>
+              <ul class="mt-20">
+                <li><a href="https://www.facebook.com/profile.php?id=100090678393589" target="_blank"><i
+                      class="fa fa-facebook-f"></i></a></li>
+                <li><a href="https://twitter.com/iitmadras_es" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/iitmadras_es/" target="_blank"><i
+                      class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/iit-madras-bs-in-electronic-systems/" target="_blank"><i
+                      class="fa fa-linkedin"></i></a></li>
+              </ul>
             </div>
           </div>
+
+          <!-- Contact Section -->
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="footer-address mt-40">
+              <div class="footer-title pb-25">
+                <h6>Contact Us</h6>
+              </div>
+              <ul>
+                <li>
+                  <div class="icon1">
+                    <i class="fa fa-home"></i>
+                  </div>
+                  <div class="cont">
+                    <p>IITM BS Degree Office, 3rd Floor, ICSR Building, IIT Madras, Chennai - 600036</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon1">
+                    <i class="fa fa-phone"></i>
+                  </div>
+                  <div class="cont">
+                    <p>+91-9711397993 (Mon-Fri 9am-6pm)</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon1">
+                    <i class="fa fa-envelope-o"></i>
+                  </div>
+                  <div class="cont">
+                    <p>support-es@study.iitm.ac.in</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+
         </div>
       </div>
-      <div class="row pt-2 pb-2">
-        <div class="col-sm-12 col-md-5 text-lighter">
-          <div class="d-flex footer-text">
-            <div style="flex-basis: 8%">
-              <img style="width: 1rem" src="./IIT Madras Degree in Electronic Systems_files/Footer icon-phone.svg">
+    </div>
+
+    <!-- Footer Copyright -->
+    <div class="footer-copyright pt-10 pb-25">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <div class="copyright text-md-left text-center pt-15">
+              <p>© IIT Madras. All rights reserved.</p>
             </div>
-            <div style="flex-basis: 90%">
-              <!-- Phone support will not be available between 13 to 21 January.<br /> Please email support-es@study.iitm.ac.in for queries  -->
-              +91-9711397993 (Mon-Fri 9am-6pm)<br>
-              support-es@study.iitm.ac.in
+          </div>
+          <div class="col-md-5">
+            <div class="text-md-right text-center pt-15">
+              <span class="footerLinks footer-text" url="honour_code.html" style="cursor: pointer; color: white;">Honour
+                Code</span>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="row pt-2 pb-4 border-bottom justify-content-between">
-        <div class="col-sm-12 col-md-5 text-lighter">
-          <!-- <div class="d-flex footer-text mt-3">
-                        <div class="qr-image mr-3" style="height: 100px;width:100px;">
-                            <img src="assets/img/homepage/whatsappQR.jpeg" style="height: auto;width:100%;" alt="">
-                        </div>
-                        <div class="qr-text" style="flex-basis: 40%;margin-right: auto;align-self: center;">
-                            Scan QR code to chat
-                            with our WhatsApp bot
-                            +91 9840776800
-                        </div>
-                    </div> -->
-        </div>
-        <div class="d-none d-md-block col-md-6 text-lighter align-self-end">
-          <div class="d-flex justify-content-end">
-            <small>© IIT Madras. All rights reserved.</small>
-          </div>
-        </div>
-        <div class="d-md-none footer-hidden col-md-12 pt-4">
-          <a class="text-decoration-none" href="https://www.facebook.com/profile.php?id=100090678393589"
-            target="_blank">
-            <img class="mr-1" src="./IIT Madras Degree in Electronic Systems_files/Footer icon-facebook.svg" alt="fb"
-              style="width: 2rem">
-          </a>
-          <a class="text-decoration-none" href="https://www.instagram.com/iitmadras_es/" target="_blank">
-            <img class="mr-1" src="./IIT Madras Degree in Electronic Systems_files/Footer icon-instagram.svg" alt="ig"
-              style="width: 2rem">
-          </a>
-          <a class="text-decoration-none" href="https://twitter.com/iitmadras_es" target="_blank">
-            <img class="mr-1" src="./IIT Madras Degree in Electronic Systems_files/Footer icon-twitter.svg" alt="tw"
-              style="width: 2rem">
-          </a>
-          <a class="text-decoration-none" href="https://www.linkedin.com/company/iit-madras-bs-in-electronic-systems/"
-            target="_blank">
-            <img class="mr-1" src="./IIT Madras Degree in Electronic Systems_files/Footer icon-linkedin.svg" alt="tw"
-              style="width: 2rem">
-          </a>
-          <!-- <a
-              class="text-decoration-none"
-              href="https://wa.me/message/IVROM2UN7XIJL1"
-              target="_blank"
-            >
-              <img
-                class="mr-1"
-                src="assets/img/homepage/Footer icon-whatsapp.svg"
-                alt="tw"
-                style="width: 2rem"
-              />
-            </a> -->
-        </div>
-      </div>
-      <div class="py-1 py-md-3 row justify-content-between">
-        <div class="d-none d-md-block col-md-6 pt-2">
-          <a class="text-decoration-none" href="https://www.facebook.com/profile.php?id=100090678393589"
-            target="_blank">
-            <img class="mr-1" src="./IIT Madras Degree in Electronic Systems_files/Footer icon-facebook.svg" alt="fb"
-              style="width: 2rem">
-          </a>
-          <a class="text-decoration-none" href="https://www.instagram.com/iitmadras_es/" target="_blank">
-            <img class="mr-1" src="./IIT Madras Degree in Electronic Systems_files/Footer icon-instagram.svg" alt="ig"
-              style="width: 2rem">
-          </a>
-          <a class="text-decoration-none" href="https://twitter.com/iitmadras_es" target="_blank">
-            <img class="mr-1" src="./IIT Madras Degree in Electronic Systems_files/Footer icon-twitter.svg" alt="tw"
-              style="width: 2rem">
-          </a>
-          <a class="text-decoration-none" href="https://www.linkedin.com/company/iit-madras-bs-in-electronic-systems/"
-            target="_blank">
-            <img class="mr-1" src="./IIT Madras Degree in Electronic Systems_files/Footer icon-linkedin.svg" alt="tw"
-              style="width: 2rem">
-          </a>
-          <!-- <a
-              class="text-decoration-none"
-              href="https://wa.me/message/IVROM2UN7XIJL1"
-              target="_blank"
-            >
-              <img
-                class="mr-1"
-                src="assets/img/homepage/Footer icon-whatsapp.svg"
-                alt="tw"
-                style="width: 2rem"
-              />
-            </a> -->
-        </div>
-        <div class="col-sm-12 col-md-6 d-md-none footer-hidden footer-text-small text-lighter">
-          <div class="d-flex justify-content-md-end">
-            <small>© IIT Madras. All rights reserved.</small>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-6 d-flex justify-content-md-end">
-          <div class="text-lighter">
-            <span class="footerLinks footer-text" url="honour_code.html" style="cursor: pointer">honour code</span>
-            <!-- |
-              <span
-                class="footerLinks footer-text"
-                url="tos.html"
-                style="cursor: pointer"
-                >Terms of Service</span
-              > -->
           </div>
         </div>
       </div>
@@ -1207,9 +1168,9 @@
     charset="">!function (b, e, f, g, a, c, d) { b.fbq || (a = b.fbq = function () { a.callMethod ? a.callMethod.apply(a, arguments) : a.queue.push(arguments) }, b._fbq || (b._fbq = a), a.push = a, a.loaded = !0, a.version = "2.0", a.queue = [], c = e.createElement(f), c.async = !0, c.src = g, d = e.getElementsByTagName(f)[0], d.parentNode.insertBefore(c, d)) }(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js"); fbq("init", "2241340682721867"); fbq("set", "agent", "tmgoogletagmanager", "2241340682721867"); fbq("track", "PageView");</script>
   <noscript><img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=2241340682721867&amp;ev=PageView&amp;noscript=1"></noscript>
-      <div id="goog-gt-tt" class="VIpgJd-yAWNEb-L7lbkb skiptranslate" 
-      style="border-radius: 12px; margin: 0 0 0 -23px; padding: 0; font-family: 'Google Sans', Arial, sans-serif;"
-      data-id="">
+  <div id="goog-gt-tt" class="VIpgJd-yAWNEb-L7lbkb skiptranslate"
+    style="border-radius: 12px; margin: 0 0 0 -23px; padding: 0; font-family: 'Google Sans', Arial, sans-serif;"
+    data-id="">
     <div id="goog-gt-vt" class="VIpgJd-yAWNEb-hvhgNd">
       <div class=" VIpgJd-yAWNEb-hvhgNd-l4eHX-i3jM8c"><img
           src="./IIT Madras Degree in Electronic Systems_files/24px.svg" width="24" height="24" alt=""></div>
@@ -1265,17 +1226,7 @@
         <circle class="VIpgJd-ZVi9od-aZ2wEe-Jt5cK" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33"
           r="30"></circle>
       </svg></div>
-  </div><iframe height="0" width="0" style="display: none; visibility: hidden;"
-    src="./IIT Madras Degree in Electronic Systems_files/saved_resource(1).html"></iframe><iframe
-    allow="join-ad-interest-group" data-tagging-id="G-YRLBGM14X9" data-load-time="1736230866513" height="0" width="0"
-    src="./IIT Madras Degree in Electronic Systems_files/rul.html"
-    style="display: none; visibility: hidden;"></iframe><iframe allow="join-ad-interest-group"
-    data-tagging-id="AW-612138151/vx_5CNzFoO4YEKf58aMC" data-load-time="1736230866608" height="0" width="0"
-    src="./IIT Madras Degree in Electronic Systems_files/612138151.html"
-    style="display: none; visibility: hidden;"></iframe><iframe frameborder="0"
-    class="VIpgJd-ZVi9od-xl07Ob-OEVmcd skiptranslate" title="Language Translate Widget"
-    style="visibility: visible; box-sizing: content-box; width: 2623px; height: 263px; display: none;"
-    src="./IIT Madras Degree in Electronic Systems_files/saved_resource(2).html"></iframe>
+  </div>
 </body>
 
 </html>

@@ -1681,8 +1681,9 @@ p {
     width: 35px;
     line-height: 35px;
     font-size: 25px;
+    padding: 4px 0px;
     color: #fff;
-    border-radius: 50%;
+    border-radius: 10%;
     text-align: center;
     background-color: #021d3a;
     -webkit-transition: all 0.4s linear;
